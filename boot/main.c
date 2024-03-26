@@ -20,6 +20,7 @@ void main(void)
     putstr("Hello world\n");
 
     printf_test();
+    printf_test();
 
     uint32_t j = 100;
     while (j--)
