@@ -1,7 +1,7 @@
 #include "stdint.h"
 #include "Uart.h"
 #include "HalUart.h"
-
+#include "HalInterrupt.h"
 extern volatile PL011_t* Uart;
 
 void Hal_uart_init(void)

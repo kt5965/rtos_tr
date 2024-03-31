@@ -28,7 +28,7 @@ void main(void)
         uint8_t ch = Hal_uart_get_char_once();
         Hal_uart_put_char(ch);
     }
-
+    while (true);
 }
 
 static void Hw_init(void)
