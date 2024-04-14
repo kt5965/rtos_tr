@@ -56,7 +56,6 @@ uint8_t Hal_uart_get_char(void)
     return data;
 }
 
-
 // optimize code reduce IO
 uint8_t Hal_uart_get_char_once(void)
 {
