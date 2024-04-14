@@ -58,7 +58,7 @@ void Hal_interrupt_register_handler(InterHdlr_fptr handler, uint32_t interrupt_n
 void Hal_interrupt_run_handler(void)
 {
     uint32_t interrupt_num = GicCpu->interruptack.bits.InterruptID;
-    if (sHandler[interrupt_num] != NULL)
-        sHandler[interrupt_num]();
+    if (sHandlers[interrupt_num] != NULL)
+        sHandlers[interrupt_num]();
     GicCpu->endofinterrupt.bits.InterruptID = interrupt_num;
 }
